@@ -14,11 +14,11 @@ p {
     text-decoration: overline;
 }
 #Amarelo {
-    color: yellow;
+    background-color: yellow;
 }
 #Vermelho {
-    color: red;
+    background-color: red;
 }
 #Marrom {
-    color: brown;
+    background-color: brown;
 }
