@@ -1,0 +1,81 @@
+body {
+    background-color: #023e8a;
+}
+h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    background-color: #0077b6;
+    color: white;
+}
+.cabecalho {
+    background-color: #0096c7;
+    color: white;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.nav-links {
+    background-color: #00b4d8;
+    padding: 3px;
+}
+.nav-links li {
+    display: inline;
+    margin-right: 11%;
+    margin-left: 11%;
+}
+.links {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 3px;
+}
+.conteudo-principal {
+    width: 60%;
+}
+.conteudo-principal p {
+    font-family: sans-serif;
+    padding: 3px;
+    color: white;
+}
+.fotos {
+    position: relative;
+    float: right;
+    border: 3px groove black;
+    margin-left: 15px;
+}
+#tabela-ref {
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+#tabela-ref td {
+    color: rgb(0, 0, 0);
+    padding: 9px;
+}
+.conteudo-adjacente {
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    float: right;
+    vertical-align: top;
+    width: 35%;
+    background-color: rgba(240, 233, 233, 0.199);
+}
+.rodape {
+    border-top: 1px solid gray;
+    text-align: center;
+    color: white;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    background-color: rgb(255, 255, 255);
+}
+a:active {
+    background-color: rgb(255, 255, 255);
+}
