@@ -3,7 +3,5 @@ let maiorValor = numbers[0];
 for (let index = 1; index < numbers.length; index +=1) {
   if (numbers[index] > maiorValor) {
     maiorValor = numbers[index]
-  } else {
-    maiorValor = maiorValor
   }
 } console.log(maiorValor)
