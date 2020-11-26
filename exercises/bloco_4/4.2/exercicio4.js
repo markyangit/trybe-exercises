@@ -6,3 +6,9 @@ for (let index = 0; index < numbers.length; index +=1) {
 }
 let mediaDosValores = somaTotal / numbers.length
 console.log(mediaDosValores)
+
+if (mediaDosValores > 20) {
+  console.log('Valor maior que 20')
+} else {
+  console.log('valor menor ou igual a 20')
+}
