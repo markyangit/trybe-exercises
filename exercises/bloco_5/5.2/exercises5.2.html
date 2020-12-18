@@ -66,6 +66,11 @@
       document.querySelector('.main-content').appendChild(document.createElement('div')).className = 'right-content';
       document.querySelector('.left-content').appendChild(document.createElement('img')).src = 'https://picsum.photos/200';
       document.getElementsByTagName('img')[0].className = 'small-image';
+      let numbersOfList = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+      document.querySelector('.right-content').appendChild(document.createElement('ul'));
+      for (let index = 0; index < numbersOfList.length; index +=1) {
+        document.getElementsByTagName('ul')[0].appendChild(document.createElement('li')).innerText = numbersOfList[index]
+      }
     </script>
   </body>
 </html>
