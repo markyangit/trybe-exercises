@@ -64,7 +64,8 @@
       document.querySelector('.center-content').appendChild(document.createElement('p')).innerText = 'algum texto';
       document.querySelector('.main-content').appendChild(document.createElement('div')).className = 'left-content';
       document.querySelector('.main-content').appendChild(document.createElement('div')).className = 'right-content';
-      
+      document.querySelector('.left-content').appendChild(document.createElement('img')).src = 'https://picsum.photos/200';
+      document.getElementsByTagName('img')[0].className = 'small-image';
     </script>
   </body>
 </html>
