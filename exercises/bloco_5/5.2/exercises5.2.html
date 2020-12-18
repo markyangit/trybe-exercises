@@ -75,6 +75,9 @@
         document.querySelector('.main-content').appendChild(document.createElement('h3'))
       }
       document.getElementsByTagName('h1')[0].className = 'title';
+      for (let index = 0; index < document.getElementsByTagName('h3').length; index += 1) {
+        document.getElementsByTagName('h3')[index].className = 'description';
+      }
       
     </script>
   </body>
