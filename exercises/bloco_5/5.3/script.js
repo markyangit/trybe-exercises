@@ -48,3 +48,23 @@ function createHolidays(Feriados) {
 
 createHolidays();
 
+function eventClickHoliday() {
+  let button = document.getElementById('btn-holiday');
+
+  button.addEventListener('click', changeBackgroundColor)
+
+  function changeBackgroundColor() {
+    let holidays = document.getElementsByClassName('holiday');
+
+    for (let index = 0; index < holidays.length; index += 1) {
+      if (holidays[index].style.backgroundColor == 'lightblue') {
+        holidays[index].style.backgroundColor = 'rgb(238,238,238)'
+      } else {
+        holidays[index].style.backgroundColor = 'lightblue'
+      }
+    }
+  }
+}
+
+eventClickHoliday();
+
