@@ -68,3 +68,12 @@ function eventClickHoliday() {
 
 eventClickHoliday();
 
+function createFriday(string) {
+  let button = document.createElement('button');
+  button.id = 'btn-friday';
+  let buttonsContainer = document.querySelector('.buttons-container');
+  buttonsContainer.appendChild(button)
+  button.innerHTML = string;
+}
+
+createFriday('Sexta-feira');
