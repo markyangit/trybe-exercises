@@ -27,6 +27,8 @@ function createDaysOfTheMonth() {
       listOfDaysOfMonth.appendChild(liElement)
     if (index === 0 || index === 1) {
       liElement.style.color = 'rgb(238,238,238)';
+    } else if (liElement.innerText === '25') {
+      liElement.className = 'day holiday friday'
     } else if (liElement.innerText === '24' || liElement.innerText === '25' || liElement.innerText === '31') {
       liElement.className = 'day holiday';
     } else if (liElement.innerText === '4' || liElement.innerText === '11' || liElement.innerText === '18' || liElement.innerText === '25') {
@@ -43,7 +45,7 @@ function createHolidays(Feriados) {
   button.id = 'btn-holiday';
   let buttonsContainer = document.querySelector('.buttons-container');
   buttonsContainer.appendChild(button)
-  button.innerHTML = 'Feriados';
+  button.innerText = 'Feriados';
 }
 
 createHolidays();
@@ -73,7 +75,30 @@ function createFriday(string) {
   button.id = 'btn-friday';
   let buttonsContainer = document.querySelector('.buttons-container');
   buttonsContainer.appendChild(button)
-  button.innerHTML = string;
+  button.innerText = string;
 }
 
 createFriday('Sexta-feira');
+
+function clickToFriday() {
+  let button = document.getElementById('btn-friday');
+
+  button.addEventListener('click', changeText)
+  var contentInnerText = [];
+  var fridays = document.getElementsByClassName('friday');
+  for (let index = 0; index < fridays.length; index += 1) {
+    contentInnerText.push(fridays[index].innerText);
+  }
+
+  function changeText() {
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerText != 'SEXTAAAA') {
+    fridays[index].innerText = 'SEXTAAAA'
+  } else {
+    fridays[index].innerText = contentInnerText[index];
+   }
+  }
+  }
+}
+clickToFriday();
+
