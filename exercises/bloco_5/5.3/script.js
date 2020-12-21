@@ -136,3 +136,21 @@ function subtitleWithColor(color) {
 }
 
 subtitleWithColor('green');
+
+function selectedTask() {
+  let tasks = document.getElementsByClassName('task');
+  for (let index = 0; index < tasks.length; index += 1) {
+    tasks[index].addEventListener('click', selectTask)
+  }
+  function selectTask(event) {
+    if (event.target.className === 'task') {
+      event.target.className = 'task selected'
+    }
+    else if (event.target.className === 'task selected') {
+      event.target.className = 'task'
+    }
+  }
+}
+
+selectedTask();
+
