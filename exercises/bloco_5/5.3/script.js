@@ -118,3 +118,13 @@ function daysEvent1() {
 }
 
 daysEvent1();
+
+function addTasks(task) {
+  let spanTag = document.createElement('span');
+  let divMyTasks = document.getElementsByClassName('my-tasks')[0];
+  spanTag.innerText = task;
+  divMyTasks.appendChild(spanTag)
+}
+
+addTasks('tarefa kkkkk');
+
