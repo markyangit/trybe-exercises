@@ -154,3 +154,20 @@ function selectedTask() {
 
 selectedTask();
 
+function subtitleForTheDay() {
+  let taskSelected = document.getElementsByClassName('task selected')[0];
+  let daysArray = document.getElementsByClassName('day');
+
+  for (let index = 0; index < daysArray.length; index += 1) {
+    daysArray[index].addEventListener('click', changeColor)
+  }
+  function changeColor(event) {
+    if (event.target.style.color == document.getElementsByClassName('task selected')[0].style.backgroundColor) {
+    event.target.style.color = 'rgb(119,119,119)'
+    } else {
+      event.target.style.color = document.getElementsByClassName('task selected')[0].style.backgroundColor
+    }
+  }
+}
+
+subtitleForTheDay();
