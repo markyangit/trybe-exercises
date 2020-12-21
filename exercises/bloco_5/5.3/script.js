@@ -102,3 +102,19 @@ function clickToFriday() {
 }
 clickToFriday();
 
+function daysEvent1() {
+  let daysArray = document.getElementsByClassName('day');
+
+  for (let index = 0; index < daysArray.length; index += 1) {
+    daysArray[index].addEventListener('mouseover', daysZoom)
+    daysArray[index].addEventListener('mouseleave', daysZoomOut)
+  }
+  function daysZoom(event) {
+    event.target.style.fontSize = '40px'
+  }
+  function daysZoomOut(event) {
+    event.target.style.fontSize = '20px'
+  }
+}
+
+daysEvent1();
