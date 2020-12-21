@@ -171,3 +171,22 @@ function subtitleForTheDay() {
 }
 
 subtitleForTheDay();
+
+function addCommitments() {
+  let button = document.getElementById('btn-add');
+  let input = document.getElementById('task-input');
+  button.addEventListener('click', addCommitmentsOnTheSite)
+  input.addEventListener('keypress', addCommitmentsOnTheSite)
+
+  function addCommitmentsOnTheSite(event) {
+    if (event.keyCode === 13 || event.type === 'click') {
+    let input = document.getElementById('task-input');
+    let liElement = document.createElement('li');
+    liElement.innerText = input.value;
+    let taskList = document.getElementsByClassName('task-list')[0];
+    taskList.appendChild(liElement)
+    }
+  }
+}
+
+addCommitments();
