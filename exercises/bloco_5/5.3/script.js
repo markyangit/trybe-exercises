@@ -128,3 +128,11 @@ function addTasks(task) {
 
 addTasks('tarefa kkkkk');
 
+function subtitleWithColor(color) {
+  let div = document.createElement('div');
+  div.className = 'task';
+  div.style.backgroundColor = color;
+  document.getElementsByClassName('my-tasks')[0].appendChild(div)
+}
+
+subtitleWithColor('green');
