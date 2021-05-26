@@ -5,7 +5,7 @@ import Order from './Order';
 
 class App extends React.Component {
   render() {
-    const headphone = {
+    const orders = [{
       id: 102,
       user: "cena@gmail.com",
       product: "Razer Headphone",
@@ -13,9 +13,8 @@ class App extends React.Component {
         value: 99.99,
         currency: "dollars"
       }
-    };
-
-    const energyDrink = {
+    },
+    {
       id: 77,
       user: "cena@gmail.com",
       product: "Monster 500mL",
@@ -23,14 +22,13 @@ class App extends React.Component {
         value: 9.99,
         currency: "dollars"
       }
-    };
+    }];
 
     return (
       <div className="App">
         <h1> Orders recently created </h1>
         {/*Usando o componente Order e passando a prop order para o componente renderizar o conteúdo.*/}
-        <Order order={ headphone } />
-        <Order order={ energyDrink } />
+        {orders.map((order, index) => <Order key={index} order={order} />)}
       </div>
     );
   }
