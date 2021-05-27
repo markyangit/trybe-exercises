@@ -1,0 +1,50 @@
+.App {
+  background-image: url("https://wallpapercave.com/wp/cqhO8rQ.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+} 
+
+.logo {
+  width: 150px;
+  padding: 20px;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-section {
+  margin: 2em 2em;
+  padding: 0.5em;
+  display: flex;
+  border: 3px solid rgb(71, 71, 221);
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.footer p {
+  font-weight: bold;
+}
+
+.footer-logo {
+  display: flex;
+  width: 100px;
+}
