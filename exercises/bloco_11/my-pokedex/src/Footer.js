@@ -8,7 +8,7 @@ class Footer extends React.Component {
             <footer className={"footer"}>
                 <p>Codado e Estilizado por Gabriel Medeiros</p>
                 <a href="https://www.linkedin.com/in/gabrielmedeiro5/"><img className={"footer-logo"} alt="imagem logotipo da rede social LinkedIn" src={linkedinLogo}></img></a>
-                <a href="https://github.com/markyangit"><img className={"footer-logo"} alt="imagem logotipo da ferramente github" src={githubLogo}></img></a>
+                <a href="https://github.com/markyangit"><img className={"footer-logo"} alt="imagem logotipo da ferramenta github" src={githubLogo}></img></a>
             </footer>
         )
     }
